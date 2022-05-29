@@ -10,7 +10,8 @@ class AppTheme {
   static const Color home_page_icon_color = Color(0xFF46bfc9);
   static const Color home_page_item_text_color = Color(0xFF273480);
   static const Color white = Color(0xFFFFFFFF);
-  static const Color login_pg_grad_top_color= Color(0xFF09102c);
+  //static const Color login_pg_grad_top_color= Color(0xFF09102c);
+  static const Color login_pg_grad_top_color= Color(0xFF1f174b);
   static const Color login_pg_grad_botom_color= Color(0xFF2e44bd);
   static const Color login_pg_tf_underline1= Color(0xFF7c82af);
   static const Color login_pg_tf_focus_underline= Color(0xFF7c82af);

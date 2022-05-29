@@ -64,28 +64,28 @@ class _HomePageScreenState extends State<HomePageScreen> {
                 mainAxisSpacing: 1,
                 children: [
                       buildProfileItem(
-                       // getTranslated(context, "Add_a_Branch")!,
-                       'Add a Branch',
+                        getTranslated(context, "Add_a_Branch")!,
+                       //'Add a Branch',
                       Icons.add_home),
                       buildProfileItem(
-                        //getTranslated(context, "management_control")!,
-                        'Manage Control',
+                        getTranslated(context, "management_control")!,
+                       // 'Management Control',
                       Icons.manage_accounts),
                       buildProfileItem(
-                        //getTranslated(context, "payment")!,
-                        'Payment',
+                        getTranslated(context, "payment")!,
+                        //'Payment',
                       Icons.payment),
                       buildProfileItem(
-                        //getTranslated(context, "notifications")!,
-                        'not',
+                        getTranslated(context, "notifications")!,
+                       // 'Notifications',
                       Icons.notifications),
                       buildProfileItem(
-                        //getTranslated(context, "settings")!,
-                        'settings',
+                        getTranslated(context, "settings")!,
+                        //'Settings',
                       Icons.settings),
                       buildProfileItem(
-                        //getTranslated(context, "promotions")!,
-                        'promotion',
+                        getTranslated(context, "promotions")!,
+                        //'Promotions',
                       Icons.keyboard_voice),
                 ]  
                          ),

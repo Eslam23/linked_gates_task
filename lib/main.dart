@@ -74,7 +74,7 @@ class _MyAppState extends State<MyApp> {
         return supportedLocales.first;
       },
       home: Scaffold(
-        body: 
+        body:
         FutureBuilder(
           future: _initializeFirebase(),
           builder: (context,snapshot){
@@ -91,7 +91,7 @@ class _MyAppState extends State<MyApp> {
           }
           ),
         
-        
+        // LoginScreen(),
         //HomePageScreen(),
         //LoginScreen(),
         //body: PlaceScreen(placeModel)

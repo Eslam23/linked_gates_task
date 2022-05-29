@@ -1,6 +1,6 @@
 {
     "Delivery": "Delivery",
-    "phone_number_hint":"Enter Phone Number",
+    "phone_number_hint":"Enter Email or Phone Number",
     "password_hint":"Enter Password",
     "login":" Login ",
     "sign_up":" Sign Up ",

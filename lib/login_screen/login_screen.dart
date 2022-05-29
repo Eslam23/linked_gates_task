@@ -7,6 +7,7 @@ import 'package:task/app_theme.dart';
 import 'package:task/login_screen/firebase_logic.dart';
 import 'package:task/login_screen/login_btn_widget.dart';
 import 'package:task/login_screen/signup_forget_pass_widget.dart';
+import 'package:task/main.dart';
 import '../home_page_screen/home_page_screen.dart';
 import '../localization/language_constant.dart';
 import 'background_img_widget.dart';
@@ -23,7 +24,7 @@ class LoginScreen extends StatefulWidget {
 class _LoginScreenState extends State<LoginScreen> {
   @override
   
-  bool _isObscure = false;
+  bool _isObscure = true;
   @override
   Widget build(BuildContext context) {
     TextEditingController _emailController = TextEditingController();
@@ -35,9 +36,16 @@ class _LoginScreenState extends State<LoginScreen> {
         const background_image_widget(),
         Container(
           height: MediaQuery.of(context).size.height,
-          decoration: const BoxDecoration(
+          decoration:  BoxDecoration(
+              image: DecorationImage(
+                 fit: BoxFit.cover,
+                colorFilter:  ColorFilter.mode(Colors.black.withOpacity(0.2), BlendMode.dstATop),
+                image: const AssetImage(
+            'assets/images/man_background.png',
+          ),
+                ),
               color: AppTheme.white,
-              gradient: LinearGradient(
+              gradient: const LinearGradient(
                   begin: FractionalOffset.topCenter,
                   end: FractionalOffset.bottomCenter,
                   colors: [
@@ -47,7 +55,9 @@ class _LoginScreenState extends State<LoginScreen> {
                   stops: [
                     0.0,
                     1.0
-                  ])),
+                  ]),
+                  
+                  ),
          child: Column(
            children: [
                     Row(
@@ -58,7 +68,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       ],
                     ),
                     const SizedBox(height: 20.0,),
-                    Image.asset('assets/images/logo.jpg'),
+                    MyApp.localeLan == const Locale('ar', "SA") ? Image.asset('assets/images/arabic_logo.png',width: 200, height: 200,):Image.asset('assets/images/logo_english1.png',width: 200, height: 200,),
                     const SizedBox(height: 14.0,),
                     Text(
                       getTranslated(context, "Delivery")!,

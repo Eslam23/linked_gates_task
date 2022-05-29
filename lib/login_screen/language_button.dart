@@ -38,8 +38,8 @@ class _CircleButtonState extends State<CircleButton> {
         height: 40.0,
         child: ElevatedButton.icon(
           style: ElevatedButton.styleFrom(
-                    shape: new RoundedRectangleBorder(
-                      borderRadius: new BorderRadius.circular(20.0),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20.0),
                     ),
                   ),
   onPressed: () {
