@@ -1,0 +1,22 @@
+{
+    "Delivery": "Delivery",
+    "phone_number_hint":"Enter Phone Number",
+    "password_hint":"Enter Password",
+    "login":" Login ",
+    "sign_up":" Sign Up ",
+    "forget_pass":"Forget Password ?",
+    "Profile":"Profile",
+    "Add_a_Branch":"Add a Branch",
+    "management_control":"Management Control",
+    "payment":"Payment",
+    "notifications":"Notifications",
+    "settings":"Settings",
+    "promotions":"Promotions",
+    "no_user_found":"No user found for that email"
+    
+    
+    
+    
+    
+  
+  }

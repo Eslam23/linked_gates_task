@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "506061923069",
+    "project_id": "fluuter-login-df3f0",
+    "storage_bucket": "fluuter-login-df3f0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:506061923069:android:cc891fe59f5e55ac321494",
+        "android_client_info": {
+          "package_name": "com.example.task"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "506061923069-ngaeai5dcc38jkr84rtd4t5gg4aukm5k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiuWLMiR3a67M91-rkn2FvJGFJKPi3kRw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "506061923069-ngaeai5dcc38jkr84rtd4t5gg4aukm5k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

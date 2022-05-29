@@ -1,0 +1,17 @@
+{
+  "Delivery": "دليفري",
+  "phone_number_hint":"ادخل رقم التليفون",
+  "password_hint":"ادخل كلمه المرور",
+  "login":" ادخل ",
+  "sign_up":" التسجيل ",
+  "forget_pass":"نسيت كلمه المرور ؟",
+  "Profile":"الصفحه الشخصيه",
+  "Add_a_Branch":"اضافه فرعh",
+  "management_control":"اداره التحكم",
+  "payment":"الدفع",
+  "notifications":"الاشعارات",
+  "settings":"الاعدادات",
+  "promotions":"الترقيات",
+  "no_user_found":"لا يوجد مستخدم لهذا الايميل"
+  
+}
