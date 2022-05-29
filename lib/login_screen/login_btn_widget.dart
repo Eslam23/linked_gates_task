@@ -35,11 +35,16 @@ class login_btn_widget extends StatelessWidget {
           )
         )
       ),
-      onPressed: () async{
-        User? user = await AccessFirebase.loginUsingPhonePassword(phone: _emailController.text, password: _passwordController.text, context: context);
-        if(user!= null){
-          Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=> const HomePageScreen()));
-        } 
+      onPressed: () async {
+        User? user = await AccessFirebase.loginUsingPhonePassword(
+            phone: _emailController.text,
+            password: _passwordController.text,
+            context: context).then((value) {
+            Navigator.of(context).pushReplacement(MaterialPageRoute(
+                builder: (context) => const HomePageScreen()));
+            return null;
+          }
+        );
       }
     );
   }

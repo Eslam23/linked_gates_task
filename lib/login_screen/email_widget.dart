@@ -16,8 +16,9 @@ class email_widget extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal:16.0),
       child: TextField(
+        style: AppTheme.login_hint_style,
         controller: _emailController,
-        keyboardType: TextInputType.phone,
+        keyboardType: TextInputType.emailAddress,
         decoration: InputDecoration(
           hintText: getTranslated(context, "phone_number_hint")!,
            enabledBorder: const UnderlineInputBorder(      

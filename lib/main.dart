@@ -2,13 +2,15 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:task/app_theme.dart';
 import 'home_page_screen/home_page_screen.dart';
 import 'localization/app_localization.dart';
 import 'localization/language_constant.dart';
 import 'login_screen/login_screen.dart';
 
-void main() {
+Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(MyApp());
 }
 
@@ -74,8 +76,9 @@ class _MyAppState extends State<MyApp> {
         return supportedLocales.first;
       },
       home: Scaffold(
-        body:
-        FutureBuilder(
+        backgroundColor: AppTheme.home_page_appbar,
+        body:LoginScreen()
+       /* FutureBuilder(
           future: _initializeFirebase(),
           builder: (context,snapshot){
             if(snapshot.connectionState == ConnectionState.done)
@@ -89,7 +92,7 @@ class _MyAppState extends State<MyApp> {
               );
             }
           }
-          ),
+          ),*/
         
         // LoginScreen(),
         //HomePageScreen(),
